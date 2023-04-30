@@ -1,8 +1,3 @@
-.MainMenu{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
-}
 body {
 	background: linear-gradient(-45deg, rgb(17, 135, 194), rgb(255, 190, 69), white, yellow);
 	background-size: 400% 400%;
@@ -20,4 +15,78 @@ body {
 	100% {
 		background-position: 0% 50%;
 	}
+}
+
+.Centering{
+	text-align: center;
+}
+.MainMenu{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 400px 200px;
+}
+.DuckingtonBG{
+	background-color: bisque;
+	outline-style: double;
+	outline-color: crimson;
+}
+.MainLinks{
+	display: grid;
+	background-color: bisque;
+	place-items: center;
+	outline-style: double;
+	outline-color: crimson;
+}
+.BG{
+	background-color: bisque;
+	outline-style: double;
+	outline-color: crimson;
+}
+.IndexBody{
+	display: grid;
+	grid-template-rows: 100px 1fr;
+}
+.title{
+	background-color: cornsilk;
+	outline-style: double;
+	outline-color: crimson;
+}
+@keyframes backgroundScroll {
+    from {background-position: 0 0;}
+    to {background-position: -500px -458px;}
+}
+@-webkit-keyframes backgroundScroll {
+    from {background-position: 0 0;}
+    to {background-position: -500px -458px;}
+}
+.Support{
+    margin: 0px;
+    padding: 0px;
+    display: flex;
+    flex-direction: column;
+    background-image: url("Support.png");
+    background-size: 500px;
+    background-repeat: infinite;
+    -webkit-animation: backgroundScroll 20s linear infinite;
+    -webkit-animation-fill-mode: forwards;
+    animation: backgroundScroll 20s linear infinite;
+    animation-fill-mode: forwards;
+}
+.duckcostumes{
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+.Leader{
+	margin: 0px;
+    padding: 0px;
+    display: flex;
+    flex-direction: column;
+    background-image: url("Leader.jpg");
+    background-size: 500px;
+    background-repeat: infinite;
+    -webkit-animation: backgroundScroll 20s linear infinite;
+    -webkit-animation-fill-mode: forwards;
+    animation: backgroundScroll 20s linear infinite;
+    animation-fill-mode: forwards;
+
 }
